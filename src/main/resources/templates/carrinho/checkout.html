@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    
+    <form th:action="@{/confirmar-pedido}" method="post">
+        <!-- Adicione campos para informações do cliente, como nome, endereço, etc. -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required/>
+
+        <!-- <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required/>
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required/> -->
+        
+        <!-- Adicione mais campos conforme necessário -->
+        
+        <form th:action="@{/checkout}" method="post">
+            <button type="submit">Prosseguir para Checkout</button>
+        </form>
+    </form>
+</body>
+</html>

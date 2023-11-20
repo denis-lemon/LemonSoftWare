@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    <div th:insert="fragmentos/publica-nav :: nav"></div>
+            <h2>Cadastro</h2>
+            <form th:action="@{/cadastro}" th:object="${cadastro}" method="post">
+                <div>
+                    <label th:for="nome">Nome:</label>
+                    <input type="text" th:field="*{nome}" placeholder="Digite seu nome" required="required">                    
+                </div>
+
+                <div>
+                    <label th:for="email">E-mail:</label>
+                    <input type="email" th:field="*{email}" placeholder="Digite seu e-mail" required="required">
+                </div>
+
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirme sua senha" required>
+                <button type="submit">Cadastre</button>
+
+            </form>
+        
+        <p class="login-link">Já possui um login? <a href="login-usu.html">Faça login aqui</a></p>
+    
+</body>
+</html>

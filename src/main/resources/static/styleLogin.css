@@ -1,0 +1,187 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu{
+    background-color: rgb(38, 38, 38);
+}
+
+#menu ul {
+    max-width: 900px;
+    list-style: none;
+    padding: 0;
+    background-color: rgb(38, 38, 38);
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    color: #f0f8ff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+#menu ul li a:hover {
+    background-color: #1252f4;
+}
+
+#menu ul li:last-child a {
+    float: right;
+    background-color: #1252f4;
+}
+
+/*Estilo da área de login*/
+
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #e8e8e8;
+
+}
+
+#login {
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #000000;
+
+}
+
+/*
+
+.card-header::after {
+
+    text-decoration: none;
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #000000;
+
+    display: 0px;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+*/
+
+.card-content label {
+
+    color: #000000;
+
+    font-size: 15px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 2px solid #000000;
+
+    outline: none;
+
+    color: #000000;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: #4d38a1;
+
+    border:none;
+
+    color:#e1e1e1;
+
+    margin: 10px 0;
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #000000;
+
+    text-decoration: none;
+
+}
